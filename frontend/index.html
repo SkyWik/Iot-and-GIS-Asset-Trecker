@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoTrack-IoT | Smart GIS & Asset Monitoring</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation & Info -->
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="icon">🌐</span>
+                <div>
+                    <h2>GeoTrack-IoT</h2>
+                    <p>Spatial Asset & IoT System</p>
+                </div>
+            </div>
+
+            <!-- Dashboard Stats Summary -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-label">Total Aset</span>
+                    <span id="total-assets-count" class="stat-value">0</span>
+                </div>
+                <div class="stat-card normal">
+                    <span class="stat-label">Normal</span>
+                    <span id="normal-count" class="stat-value">0</span>
+                </div>
+                <div class="stat-card warning">
+                    <span class="stat-label">Peringatan</span>
+                    <span id="warning-count" class="stat-value">0</span>
+                </div>
+                <div class="stat-card critical">
+                    <span class="stat-label">Kritis</span>
+                    <span id="critical-count" class="stat-value">0</span>
+                </div>
+            </div>
+
+            <!-- Asset List & Filter -->
+            <div class="section-title">
+                <h3>Daftar Aset Geospasial</h3>
+                <button id="refresh-btn" class="btn-refresh">🔄 Refresh Data</button>
+            </div>
+
+            <div id="asset-list" class="asset-list">
+                <p class="loading-text">Memuat data aset...</p>
+            </div>
+
+            <!-- Asset Telemetry Detail Panel -->
+            <div id="detail-panel" class="detail-panel hidden">
+                <h3>Detail Telemetri IoT</h3>
+                <div id="detail-content">Pilih aset di peta atau daftar untuk melihat telemetri.</div>
+            </div>
+        </aside>
+
+        <!-- Main Map Area -->
+        <main class="map-container">
+            <div id="map"></div>
+            
+            <!-- Map Overlay Banner -->
+            <div class="map-overlay">
+                <span class="badge live-badge">🔴 LIVE TELEMETRY INGESTION</span>
+                <span id="last-updated-text">Terakhir diperbarui: -</span>
+            </div>
+        </main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Application JS -->
+    <script src="app.js"></script>
+</body>
+</html>

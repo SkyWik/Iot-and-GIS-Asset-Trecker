@@ -1,0 +1,42 @@
+[
+  {
+    "id": "AST-001",
+    "name": "Lampu Jalan Pintar Pantai Panjang",
+    "category": "Penerangan",
+    "latitude": -3.8150,
+    "longitude": 102.2780,
+    "status": "Normal"
+  },
+  {
+    "id": "AST-002",
+    "name": "Sensor Kualitas Air Sungai Muara",
+    "category": "Lingkungan",
+    "latitude": -3.7915,
+    "longitude": 102.2612,
+    "status": "Warning"
+  },
+  {
+    "id": "AST-003",
+    "name": "TPS Pintar Simpang Lima",
+    "category": "Kebersihan",
+    "latitude": -3.7932,
+    "longitude": 102.2655,
+    "status": "Critical"
+  },
+  {
+    "id": "AST-004",
+    "name": "Stasiun Cuaca Kampus UNIB",
+    "category": "Cuaca & Lingkungan",
+    "latitude": -3.7570,
+    "longitude": 102.2730,
+    "status": "Normal"
+  },
+  {
+    "id": "AST-005",
+    "name": "Sensor Banjir Benteng Marlborough",
+    "category": "Kebencanaan",
+    "latitude": -3.7865,
+    "longitude": 102.2515,
+    "status": "Normal"
+  }
+]
