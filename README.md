@@ -28,12 +28,9 @@ python sensor_simulator.py
 
 ---
 
-## 🛰️ Integrasi Perangkat Perangkat GIS (QGIS / ArcGIS)
+### Integrasi Perangkat Perangkat GIS (QGIS / ArcGIS)
 Anda dapat menghubungkan endpoint GeoJSON dari sistem ini langsung ke software GIS seperti **QGIS** atau **ArcGIS Pro**:
 - **GeoJSON Endpoint**: `http://localhost:8000/api/assets/geojson`
 - Di QGIS: Pilih `Layer` -> `Add Layer` -> `Add Vector Layer` -> Masukkan URL HTTP di atas.
 
 ---
-
-## 📄 Lisensi
-Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk detailnya.
